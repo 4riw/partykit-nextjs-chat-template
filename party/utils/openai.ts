@@ -26,7 +26,7 @@ export async function getChatCompletionResponse(
   });
 
   const openaiResponse = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "nousresearch/hermes-3-llama-3.1-405b",
     stream: true,
     messages: prompt,
   });
